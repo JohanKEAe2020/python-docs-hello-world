@@ -1,5 +1,6 @@
 from flask import Flask
 app = Flask(__name__)
+from time import ctime
 import smtplib, ssl
 
 @app.route("/")
@@ -13,14 +14,14 @@ def hello():
 
     name="Thomas"
     antal=700
-    tid="15 minutter"
+    tid=ctime()
 
 
     message = """\
     Subject: Dagens statistik \n\n"""
     message+='Hello, {} \n\n'.format(name)
-    message+='Antal: {} \n'.format(antal)
-    message+='Gennesnitlig tid: {} \n\n'.format(tid)
+    message+='Antallet af mennsker var over: {} \n'.format(antal)
+    message+='Tidspunkt: {} \n\n'.format(tid)
     message+="Venlig hilsen RPI."
 
     context = ssl.create_default_context()
