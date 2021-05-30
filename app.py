@@ -17,7 +17,7 @@ def hello():
     tid=ctime()
 
 
-    message = """\
+    message = """Statistik\
     Subject: Dagens statistik \n"""
     message+='Hej, {} \n\n'.format(name)
     message+='Antallet af mennsker var over: {} \n'.format(antal)
