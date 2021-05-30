@@ -19,7 +19,7 @@ def hello():
 
     message = """\
     Subject: Dagens statistik \n\n"""
-    message+='Hello, {} \n\n'.format(name)
+    message+='Hej, {} \n\n'.format(name)
     message+='Antallet af mennsker var over: {} \n'.format(antal)
     message+='Tidspunkt: {} \n\n'.format(tid)
     message+="Venlig hilsen RPI."
