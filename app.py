@@ -4,7 +4,7 @@ from time import ctime
 import smtplib, ssl
 
 @app.route("/")
-def hello():
+def advarselsemail():
     
     port = 465  # For SSL
     smtp_server = "smtp.gmail.com"
