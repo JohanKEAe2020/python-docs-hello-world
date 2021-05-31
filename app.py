@@ -13,7 +13,7 @@ def hello():
     password = "NaturCenterAmagerStrand" #input("Type your password and press enter: ")
 
     name="Thomas"
-    antal=700
+    antal=75
     tid=ctime()
     subject="Dagens statistik"
 
@@ -27,4 +27,4 @@ def hello():
     with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
         server.login(sender_email, password)
         server.sendmail(sender_email, receiver_email, message)
-    return "Hello, World!"
+    return "Advarsel afsendt"
