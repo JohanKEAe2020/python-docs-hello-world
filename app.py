@@ -15,7 +15,7 @@ def advarselsemail():
     name="Thomas"
     antal=75
     tid=ctime()
-    subject="Dagens statistik"
+    subject="Dagens advarsel"
 
     message = 'Subject: {}\n\n'.format(subject)
     message+='Hej {}, \n\n'.format(name)
